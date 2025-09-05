@@ -4,10 +4,13 @@ import { ApiConfig } from '../types/dart';
 const isDevelopment = process.env.NODE_ENV === 'development';
 const PROXY_URL = 'http://localhost:8080';
 
+// 프로덕션에서는 CORS 프록시 서비스 사용
+const PRODUCTION_PROXY = 'https://cors-anywhere.herokuapp.com';
+
 export const API_CONFIG: ApiConfig = {
   baseUrl: isDevelopment 
     ? `${PROXY_URL}/api`
-    : 'https://opendart.fss.or.kr/api',
+    : `${PRODUCTION_PROXY}/https://opendart.fss.or.kr/api`,
   apiKey: process.env.REACT_APP_DART_API_KEY || '',
   timeout: 10000,
 };

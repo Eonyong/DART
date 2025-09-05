@@ -63,6 +63,7 @@ export const useMainInfo = (
   bsnsYear: string,
   reprtCode: string,
   options?: {
+  
     fsDiv?: string;
   }
 ) => {

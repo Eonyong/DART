@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "OpenDART API를 활용한 공시 정보 조회 웹페이지",
   "private": true,
+  "homepage": "https://eonyong.github.io/DART",
   "dependencies": {
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
